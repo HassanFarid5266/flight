@@ -1,13 +1,3 @@
-document.addEventListener("DOMContentLoaded", function () {
-  // Active Link for Current Page
-  const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
-  navLinks.forEach(function (link) {
-    if (link.href === window.location.href) {
-      link.classList.add("active");
-    }
-  });
-});
-
 (function ($) {
   ("use strict");
 
@@ -912,5 +902,13 @@ jQuery(window).on("load", function () {
   jQuery(".preloader").fadeOut(400);
 });
 
-
-
+document.addEventListener("DOMContentLoaded", function () {
+  const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+  if (navLinks) {
+    navLinks.forEach(function (link) {
+      if (link.href === window.location.href) {
+        link.classList.add("active");
+      }
+    });
+  };
+});
