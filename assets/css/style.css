@@ -11320,3 +11320,32 @@ input::-webkit-inner-spin-button {
 input[type="number"] {
   -moz-appearance: textfield;
 }
+
+.section-heading .content {
+  /* padding: 100px 0; */
+}
+
+.section-heading .content h3,
+.section-heading .content p{
+  font-size: 40px;
+  color: var(--black-color);
+}
+
+.section-heading .content h3 {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.hajj-package .row {
+  padding: 50px 0;
+}
+
+.hajj-package .numbering {
+  border-right: 3px solid var(--main-color); 
+  border-bottom: 3px solid var(--main-color);
+  padding: 0px 2px 2px 0;
+}
+
+.hajj-package .heading {
+  font-size: 36px;
+}
