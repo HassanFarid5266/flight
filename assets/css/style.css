@@ -423,6 +423,7 @@ section {
   padding: 7px 10px;
   transition: var(--transition);
   box-shadow: none;
+  font-size: 15px;
   overflow: hidden;
   white-space: nowrap;
   position: relative;
