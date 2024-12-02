@@ -475,7 +475,7 @@ section {
 
 /* --Banner Area-- */
 #home_one_banner {
-  background-image: url("../img/banner/bg.png");
+  background-image: url("../img/banner/flight-v2.png");
   padding: 370px 0 280px 0;
   position: relative;
   background-position: center;
@@ -497,9 +497,11 @@ section {
 }
 
 /* --Theme Search Form-- */
-#theme_search_form {
-  margin-top: -140px;
-  z-index: 9;
+  #theme_search_form {
+    margin-top: 6px;
+    position: relative;
+    z-index: 9;
+    margin-left: -494px;
 }
 
 .theme_search_form_area {
