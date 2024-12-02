@@ -11349,3 +11349,75 @@ input[type="number"] {
 .hajj-package .heading {
   font-size: 36px;
 }
+
+#hajj-card .card {
+  display: flex;
+  flex-direction: row;
+  /* width: 400px; */
+  padding: 4px;
+  height: 100%;
+}
+
+#hajj-card .card .head{
+  width: 40%;
+}
+
+#hajj-card .card .body {
+  width: 60%;
+}
+
+#hajj-card .card .head .card-image{
+  width: 100%;
+  height: 100%;
+
+}
+
+#hajj-card .card .head .card-image img {
+  width: 100%;
+  height: 100%;
+
+  border-radius: .25rem;
+}
+
+#hajj-card .card .body {
+  padding-left: 10px;
+}
+
+#hajj-card .card .body p.heading {
+  color: var(--black-color);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#hajj-card .card .body p {
+  /* line-height: normal; */
+  /* margin-bottom: 4px; */
+}  
+
+#hajj-card .card .body p.days {
+  font-weight: 500;
+  color: var(--black-color);
+}
+
+#hajj-card .card .body p svg {
+  width: 12px;
+}
+
+#hajj-card .card .body .foot{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#hajj-card .card .body .foot a.btn {
+  border-radius: 50px;
+  background-color: var(--main-color);
+  border: none;
+  outline: none;
+}
+
+#hajj-card .card .body .foot a.btn:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}

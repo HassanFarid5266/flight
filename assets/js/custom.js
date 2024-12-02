@@ -1,3 +1,15 @@
+document.addEventListener("DOMContentLoaded", function () {
+  const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+  if (navLinks) {
+    navLinks.forEach(function (link) {
+      if (link.href === window.location.href) {
+        link.classList.add("active");
+      }
+    });
+  };
+});
+
+
 (function ($) {
   ("use strict");
 
@@ -852,6 +864,33 @@
     },
   });
 
+  $(".hajj-package-crausel").owlCarousel({
+    loop: true,
+    dots: true,
+    autoplay: true,
+    smartSpeed: 1000,
+    margin: 30,
+    nav: true,
+    navText: [
+      "<i class='fas fa-arrow-left'></i>",
+      "<i class=' fas fa-arrow-right' ></i>",
+    ],
+    responsive: {
+      0: {
+        items: 1,
+      },
+      768: {
+        items: 2,
+      },
+      992: {
+        items: 3,
+      },
+      1200: {
+        items: 3,
+      },
+    },
+  });
+
   // Slider For category pages / filter price
   if (typeof noUiSlider === "object") {
     var priceSlider = document.getElementById("price-slider");
@@ -900,15 +939,4 @@ function backSp(backKey) {
 
 jQuery(window).on("load", function () {
   jQuery(".preloader").fadeOut(400);
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
-  if (navLinks) {
-    navLinks.forEach(function (link) {
-      if (link.href === window.location.href) {
-        link.classList.add("active");
-      }
-    });
-  };
 });
