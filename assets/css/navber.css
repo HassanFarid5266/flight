@@ -43,9 +43,6 @@
     color: var(--white-color);
 }
 
-.topbar-list li a:hover {
-    color: var(--main-color);
-}
 .topbar-list li i {
     color: var(--white-color);
     padding-left: 5px;
@@ -106,10 +103,6 @@
     font-size: 14px;
     font-weight: 500;
     padding-right: 15px
-}
-
-.topbar-others-options li .language-option button:hover {
-    color: var(--main-color);
 }
 
 .topbar-others-options li .language-option button::after {

@@ -497,11 +497,21 @@ section {
 }
 
 /* --Theme Search Form-- */
-  #theme_search_form {
-    margin-top: 6px;
+#theme_search_form {
+    /* margin-top: 6px; */
+    margin-top: -140px;
     position: relative;
     z-index: 9;
-    margin-left: -494px;
+    /* margin-top: -494px; */
+}
+
+.index_theme_search_form_area #theme_search_form {
+  margin-left: 0px !important;
+  margin-top: 6px !important;
+}
+
+#home_one_banner .container {
+  margin-left: 0px;
 }
 
 .theme_search_form_area {
@@ -510,6 +520,7 @@ section {
   border-radius: 20px;
   padding: 30px 30px;
   position: relative;
+  width: 98%;
 }
 
 .theme_search_form_tabbtn .nav-item {
@@ -551,6 +562,7 @@ section {
   padding: 10px 10px 10px 20px;
   border-radius: 10px;
   position: relative;
+  /* height: 100%; */
 }
 
 .plan_icon_posation {
@@ -628,7 +640,7 @@ section {
 }
 
 .dropdown_passenger_area .dropdown-menu.show {
-  transform: translate(-56%, 70px) !important;
+  /* transform: translate(-3%, 70px) !important; */
 }
 
 .dropdown_passenger_area .dropdown-menu {
@@ -11423,4 +11435,72 @@ input[type="number"] {
   border: none;
   outline: none;
   box-shadow: none;
+}
+
+@media (max-width: 1440px) {
+  .index_theme_search_form_area #theme_search_form {
+    position: absolute;
+    bottom: -80px;
+    left: 12%;
+  }
+  .index_theme_search_form_area#home_one_banner {
+    background-position: right;
+  }
+  .index_theme_search_form_area .top_form_search_button {
+    margin-top: 10px !important;
+  }
+  .index_theme_search_form_area .flight_categories_search .nav-tabs {
+    margin-bottom: 0px !important;
+  }
+  .index_theme_search_form_area .theme_search_form_tabbtn {
+    margin-bottom: 10px !important;
+  }
+}
+
+@media (max-width: 1280px) {
+  .index_theme_search_form_area #theme_search_form {
+    position: relative;
+    left: 0%;
+    right: 0%;
+  }
+
+  .index_theme_search_form_area .theme_search_form_area {
+    width: 100%;
+  }
+}
+
+.main_form{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+}
+
+
+@media (max-width: 992px) {
+  .main_form{
+    grid-template-columns: auto auto;
+  } 
+  .dropdown_passenger_area .dropdown-menu {
+    transform: translate(-3%, 70px) !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .main_form {
+    grid-template-columns: auto;
+    gap: 0px;
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: 425px) {
+  .index_theme_search_form_area#home_one_banner {
+    padding: 10px 0 155px 0;
+  }
+}
+
+@media (max-width: 375px) {
+  .flight_categories_search .nav-tabs .nav-link {
+    font-size: 16px;
+  }
 }

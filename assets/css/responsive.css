@@ -1405,6 +1405,7 @@
 
     .theme_nav_tab_four_item .nav-tabs {
         justify-content: center;
+        gap: 20px;
     }
 
     .theme_nav_tab_six_item .nav-tabs {
@@ -1428,7 +1429,7 @@
     }
 
     .arrow_style.owl-theme .owl-nav {
-        margin-top: 0px;
+        margin-top: 25px;
         position: inherit;
         width: 100%;
     }
