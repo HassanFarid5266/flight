@@ -938,5 +938,5 @@ function backSp(backKey) {
 }
 
 jQuery(window).on("load", function () {
-  jQuery(".preloader").fadeOut(2000);
+  jQuery(".preloader").fadeOut(2900);
 });
